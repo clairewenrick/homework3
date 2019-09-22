@@ -1,0 +1,97 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+  background: url(../images/pidgeon-background.jpg) #dddddd;
+}
+h1{
+  line-height: 1.5;
+  color: #c12258;
+  font-size: 2em;
+}
+
+table {
+  /*Every even numbered table row has a grey background (#dddddd), every add table row has a transparent background.*/
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
+tbody tr:hover {background-color: #fab9cf;}
+th,
+tr {
+  padding: 15px;
+  border-bottom: 2px solid black;
+
+}
+
+thead {
+  min-width: 150px
+  padding: 10px;
+  color: white;
+  background-color: #7e0830;
+  text-transform: uppercase;
+
+}
+
+tr:nth-child(even) {
+  background: #dddddd;
+  text-align: center;
+
+}
+
+tr:nth-child(odd) {
+  background: transparent;
+  text-align: center;
+
+}
+
+td {
+  border-bottom: 2px solid black;
+  
+}
+td:first-child {
+  border-left: 2px solid black;
+
+}
+/*curved borders on top*/
+thead tr:first-child th:first-child{
+    border-radius: 10px 0 0 0;
+}
+
+thead tr:first-child th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+
+/*curved borders on bottom*/
+tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+  }
+
+tbody tr:last-child th:first-child {
+    border-radius: 0 0 0 10px;
+  }
+
+a:link {
+  font-size: 18px;
+  color: #c12258;
+
+}
+
+a:focus {
+  outline: 1px solid red;
+
+}
+
+footer{
+    color: white;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+}
